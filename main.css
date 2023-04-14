@@ -1,0 +1,1136 @@
+body {
+  line-height: 1.5;
+}
+
+header {
+  position: relative;
+  height: 75px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(150, 149, 149);
+}
+header nav.nav-desktop {
+  transform: translateY(50%);
+}
+@media only screen and (max-width: 800px) {
+  header nav.nav-desktop {
+    display: none;
+  }
+}
+header nav.nav-desktop .container {
+  display: flex;
+  justify-content: center;
+}
+header nav.nav-desktop .container .row {
+  margin: 0;
+  width: 100%;
+}
+header nav.nav-desktop .container .row .logo {
+  padding-right: 30px;
+}
+header nav.nav-desktop .container .row .logo a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  padding: 0;
+}
+header nav.nav-desktop .container .row .logo a img {
+  max-height: 35px;
+  width: auto;
+}
+header nav.nav-desktop .container .row .cattegory ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+header nav.nav-desktop .container .row .cattegory ul li {
+  list-style: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+header nav.nav-desktop .container .row .cattegory ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header nav.nav-desktop .container .row .cattegory ul li a.forMen {
+  color: #00aeef;
+}
+header nav.nav-desktop .container .row .rght-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav.nav-desktop .container .row .rght-nav ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+header nav.nav-desktop .container .row .rght-nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header nav.nav-desktop .container .row .rght-nav ul li svg {
+  width: 22px;
+  height: 22px;
+}
+header nav.nav-tablet {
+  transition: all 2s ease;
+}
+@media only screen and (max-width: 800px) {
+  header nav.nav-tablet {
+    display: block !important;
+  }
+}
+header nav.nav-tablet .container {
+  transform: translateY(50%);
+}
+header nav.nav-tablet .container .row .left-nav {
+  display: inline-flex;
+}
+header nav.nav-tablet .container .row .left-nav .toggle a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  display: block;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+header nav.nav-tablet .container .row .left-nav .toggle a .div1 {
+  height: 3px;
+  background-color: #000;
+  width: 30px;
+}
+header nav.nav-tablet .container .row .left-nav .toggle a .div2 {
+  height: 3px;
+  background-color: #000;
+  width: 22px;
+  margin-top: 6px;
+}
+header nav.nav-tablet .container .row .left-nav .toggle a .div3 {
+  height: 3px;
+  background-color: #000;
+  width: 16px;
+  margin-top: 6px;
+}
+header nav.nav-tablet .container .row .left-nav a.search {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 10px;
+  color: #000;
+}
+header nav.nav-tablet .container .row .left-nav a.search i {
+  color: #000;
+  font-size: 16px;
+}
+header nav.nav-tablet .container .row .logo-nav {
+  padding: 0;
+  text-align: center;
+}
+header nav.nav-tablet .container .row .logo-nav a {
+  text-decoration: none;
+  text-align: center;
+}
+header nav.nav-tablet .container .row .logo-nav a img {
+  max-height: 30px;
+  max-width: 100%;
+}
+header nav.nav-tablet .container .row .right-nav {
+  text-align: right;
+  padding: 0;
+}
+header nav.nav-tablet .container .row .right-nav a {
+  text-decoration: none;
+  color: #000;
+}
+header nav.nav-tablet .container .row .right-nav a i {
+  color: #000;
+  font-size: 16px;
+}
+@media only screen and (max-width: 576px) {
+  header nav.nav-tablet .container .row .right-nav a i {
+    margin-right: 8px;
+  }
+}
+header .tablet-menu {
+  width: 240px;
+  background-color: white;
+  height: 1000px;
+  margin-top: 30px;
+  z-index: 2000;
+  position: absolute;
+  top: -30px;
+  transition: all 0.3s ease-in-out;
+}
+header .tablet-menu .for-men-nav {
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+header .tablet-menu .for-men-nav .for-men, header .tablet-menu .for-men-nav .for-women {
+  text-decoration: none;
+  color: #13246b;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 0 10px;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid rgb(221, 220, 220);
+  padding-right: 10px;
+  margin: 15px;
+}
+header .tablet-menu .for-men-nav .for-men:hover, header .tablet-menu .for-men-nav .for-women:hover {
+  color: #00aeef;
+}
+header .tablet-menu .for-men-nav .men-nav, header .tablet-menu .for-men-nav .women-nav {
+  transition: all 2s ease;
+}
+header .tablet-menu .for-men-nav .men-nav ul, header .tablet-menu .for-men-nav .women-nav ul {
+  display: block;
+  list-style: none;
+}
+header .tablet-menu .for-men-nav .men-nav ul li, header .tablet-menu .for-men-nav .women-nav ul li {
+  list-style: none;
+  margin-top: 8px;
+}
+header .tablet-menu .for-men-nav .men-nav ul li a, header .tablet-menu .for-men-nav .women-nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #13246b;
+  text-align: left;
+  font-weight: 500;
+}
+
+section.discover-features {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features {
+    padding-bottom: 30px;
+  }
+}
+section.discover-features .container {
+  padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container {
+    width: 90%;
+  }
+}
+section.discover-features .container .row .discover {
+  display: flex;
+}
+section.discover-features .container .row .discover a {
+  width: 100%;
+  text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container .row .discover a img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container .row .discover a {
+    width: auto;
+  }
+}
+section.discover-features .container .row .discover .discoverLogo {
+  max-width: 16.66%;
+  background-color: #061d28;
+  display: inline-block;
+  padding: 20px 40px;
+  text-align: center;
+}
+section.discover-features .container .row .discover .discoverLogo a {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1199px) {
+  section.discover-features .container .row .discover .discoverLogo a {
+    transform: translateY(15px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.discover-features .container .row .discover .discoverLogo a {
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container .row .discover .discoverLogo a img {
+    max-width: 50px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container .row .discover .discoverLogo {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.discover-features .container .row .discover .textDiscover {
+  display: inline-block;
+  background-color: #99c940;
+  color: #fff;
+  padding: 5px 0;
+}
+section.discover-features .container .row .discover .textDiscover .largeText {
+  font-size: 30px;
+  padding: 5px 40px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 1199px) {
+  section.discover-features .container .row .discover .textDiscover .largeText {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  section.discover-features .container .row .discover .textDiscover .largeText {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container .row .discover .textDiscover .largeText {
+    font-size: 16px;
+    padding: 5px 40px;
+  }
+}
+section.discover-features .container .row .discover .textDiscover .smallText {
+  font-size: 24px;
+  padding: 5px 40px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 1199px) {
+  section.discover-features .container .row .discover .textDiscover .smallText {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  section.discover-features .container .row .discover .textDiscover .smallText {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.discover-features .container .row .discover .textDiscover .smallText {
+    font-size: 16px;
+    padding: 5px 40px;
+  }
+}
+
+section.seoText {
+  padding-bottom: 60px;
+}
+section.seoText .container .row h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+section.seoText .container .row .textContent {
+  display: flex;
+  justify-content: space-between;
+  color: #767676;
+}
+section.seoText .container .row .textContent .left-text {
+  max-width: 45%;
+}
+section.seoText .container .row .textContent .right-text {
+  max-width: 45%;
+}
+
+footer a {
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-logo {
+  background-color: #071955;
+  position: relative;
+  text-align: center;
+}
+footer .footer-logo a {
+  text-decoration: none;
+  width: 100%;
+}
+footer .footer-logo a img {
+  width: 135px;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 0;
+}
+footer .footer-info {
+  background-color: #071955;
+}
+footer .footer-info .container {
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 575px) {
+  footer .footer-info .container {
+    display: block;
+  }
+}
+@media only screen and (max-width: 575px) {
+  footer .footer-info .container div {
+    padding-bottom: 30px;
+  }
+}
+footer .footer-info .container a.footer-title {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+footer .footer-info .container a.footer-title:hover {
+  color: #00aeef;
+}
+footer .footer-info .container ul {
+  margin-top: 25px;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+}
+@media only screen and (max-width: 576px) {
+  footer .footer-info .container ul {
+    display: none;
+  }
+}
+footer .footer-info .container ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+footer .footer-info .container ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-info .container ul li a:hover {
+  color: #00aeef;
+}
+footer .subs {
+  background-color: #071955;
+}
+footer .subs .container {
+  max-width: 1160px;
+}
+@media only screen and (max-width: 575px) {
+  footer .subs .container {
+    text-align: center;
+  }
+}
+footer .subs .container h5 {
+  color: #fff;
+  line-height: 1.2rem;
+  letter-spacing: 0.25;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: left;
+}
+@media only screen and (max-width: 575px) {
+  footer .subs .container h5 {
+    text-align: center;
+  }
+}
+footer .subs .container input {
+  background: 0 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  padding: 12px 30px 12px 0;
+}
+@media only screen and (max-width: 575px) {
+  footer .subs .container input {
+    text-align: center;
+  }
+}
+footer .subs .container a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+footer .subs .container a i {
+  font-weight: 600;
+}
+footer .footer-partners {
+  background-color: #071955;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 575px) {
+  footer .footer-partners {
+    padding-top: 10px;
+  }
+}
+footer .footer-partners .container {
+  max-width: 1160px;
+  position: absolute;
+}
+footer .footer-partners .container a {
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+  position: inherit;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 575px) {
+  footer .footer-partners .container a {
+    display: block;
+    position: relative;
+    justify-items: center;
+    text-align: center;
+  }
+}
+footer .footer-partners .container a img {
+  width: 57px;
+  height: 38px;
+  text-align: right;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 575px) {
+  footer .footer-partners .container a img {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+footer .copyright {
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+footer .copyright p {
+  text-align: center;
+  color: #757575;
+  margin-right: 20px;
+}
+footer .copyright a {
+  text-decoration: none;
+  color: #333;
+}
+footer .copyright a:hover {
+  color: #00aeef;
+}
+
+section.discover {
+  padding-bottom: 30px;
+}
+section.discover .row {
+  margin: 0;
+}
+section.discover .row .discoverNav {
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0 -3px 4px rgba(0, 0, 0, 0.1);
+}
+section.discover .row .discoverNav .shopMen {
+  border-top: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  display: block;
+}
+section.discover .row .discoverNav .shopWomen {
+  background-color: #f0f0f1;
+  border-top: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+section.discover .row .discoverNav a {
+  text-decoration: none;
+  height: 69px;
+  width: 380px;
+  max-width: 50%;
+  text-align: center;
+  padding-top: 25px;
+  color: #13246b;
+  position: relative;
+  font-weight: 500;
+}
+section.discover .row .discoverContent .menContainer {
+  margin: 20px auto;
+}
+section.discover .row .discoverContent .menContainer .row {
+  margin: 0 !important;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 {
+  overflow: hidden;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 span {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 span a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 span a img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 span a img:hover {
+  transform: scale(1.5);
+}
+section.discover .row .discoverContent .menContainer .row .prod1 .textTitle {
+  position: relative;
+  top: -50px;
+  left: 24px;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 .textTitle a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+section.discover .row .discoverContent .menContainer .row .prod1 .textTitle a:hover {
+  border: none;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 {
+  overflow: hidden;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 span {
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 span a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 span a img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 span a img:hover {
+  transform: scale(1.5);
+}
+section.discover .row .discoverContent .menContainer .row .prod2 .textTitle {
+  position: relative;
+  top: -50px;
+  left: 24px;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 .textTitle a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+section.discover .row .discoverContent .menContainer .row .prod2 .textTitle a:hover {
+  border: none;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 {
+  overflow: hidden;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 span {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 span a {
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 span a img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 span a img:hover {
+  transform: scale(1.5);
+}
+section.discover .row .discoverContent .menContainer .row .prod3 .textTitle {
+  position: relative;
+  top: -50px;
+  left: 24px;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 .textTitle a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+section.discover .row .discoverContent .menContainer .row .prod3 .textTitle a:hover {
+  border: none;
+}
+section.discover .row .discoverContent .womenContainer {
+  margin: 20px auto;
+  display: none;
+}
+section.discover .row .discoverContent .womenContainer .row {
+  margin: 0 !important;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 {
+  overflow: hidden;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 span {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 span a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 span a img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 span a img:hover {
+  transform: scale(1.5);
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 .textTitle {
+  position: relative;
+  top: -50px;
+  left: 24px;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 .textTitle a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+section.discover .row .discoverContent .womenContainer .row .prod1 .textTitle a:hover {
+  border: none;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 {
+  overflow: hidden;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 span {
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 span a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 span a img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 span a img:hover {
+  transform: scale(1.5);
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 .textTitle {
+  position: relative;
+  top: -50px;
+  left: 24px;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 .textTitle a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+section.discover .row .discoverContent .womenContainer .row .prod2 .textTitle a:hover {
+  border: none;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 {
+  overflow: hidden;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 span {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 span a {
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 span a img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 span a img:hover {
+  transform: scale(1.5);
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 .textTitle {
+  position: relative;
+  top: -50px;
+  left: 24px;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 .textTitle a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+section.discover .row .discoverContent .womenContainer .row .prod3 .textTitle a:hover {
+  border: none;
+}
+
+section.carousel {
+  padding-top: 75px;
+}
+section.carousel .slider-slick .slide-1 {
+  position: relative;
+  width: 1423px;
+  height: 450px;
+  background-image: url(" https://cdn11.bigcommerce.com/s-z6cvd38ohl/product_images/uploaded_images/homepage-banner-desktop-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.carousel .slider-slick .slide-1 .left {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-1 .left {
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+}
+section.carousel .slider-slick .slide-1 .left .banner-content {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding-left: 130px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content {
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-1 .left .banner-content h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: left;
+  color: #72fe45 !important;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content h2 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content h2 {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-1 .left .banner-content p {
+  font-size: 25px;
+  text-align: left;
+  color: #fff;
+  font-weight: 900;
+  margin: 20px 0 40px;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content p {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-1 .left .banner-content a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  background-color: #72fe45;
+  padding: 15px 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-1 .left .banner-content a {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-1 .right-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+section.carousel .slider-slick .slide-1 .right-image img {
+  width: auto;
+  height: 450px;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-1 .right-image img {
+    margin-top: 30px;
+    height: 230px;
+  }
+}
+section.carousel .slider-slick .slide-2 {
+  position: relative;
+  width: 1423px;
+  height: 450px;
+  background-image: url("https://cdn11.bigcommerce.com/s-z6cvd38ohl/product_images/uploaded_images/mvp-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.carousel .slider-slick .slide-2 .left {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-2 .left {
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+}
+section.carousel .slider-slick .slide-2 .left .banner-content {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding-left: 130px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content {
+    padding-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-2 .left .banner-content h2 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: left;
+  color: #000 !important;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content h2 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content h2 {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-2 .left .banner-content p {
+  font-size: 36px;
+  text-align: left;
+  color: #000;
+  font-weight: 900;
+  margin: 20px 0 40px;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content p {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-2 .left .banner-content a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffc001;
+  padding: 15px 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-2 .left .banner-content a {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-2 .right-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+section.carousel .slider-slick .slide-2 .right-image img {
+  width: auto;
+  height: 450px;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-2 .right-image img {
+    padding-bottom: 250px;
+  }
+}
+section.carousel .slider-slick .slide-3 {
+  position: relative;
+  width: 1423px;
+  height: 450px;
+  background-image: url("https://cdn11.bigcommerce.com/s-z6cvd38ohl/product_images/uploaded_images/hr-campaign-background-revised-v6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.carousel .slider-slick .slide-3 .left {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-3 .left {
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+}
+section.carousel .slider-slick .slide-3 .left .banner-content {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding-left: 130px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+section.carousel .slider-slick .slide-3 .left .banner-content h2 {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: left;
+  color: #fff !important;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content h2 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content h2 {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-3 .left .banner-content p {
+  font-size: 25px;
+  text-align: left;
+  color: #fff;
+  font-weight: 900;
+  margin: 20px 0 40px;
+}
+@media only screen and (max-width: 991px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content p {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-3 .left .banner-content a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #621407;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-3 .left .banner-content {
+    text-align: center;
+  }
+}
+section.carousel .slider-slick .slide-3 .right-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+section.carousel .slider-slick .slide-3 .right-image img {
+  width: auto;
+  height: 450px;
+}
+@media only screen and (max-width: 767px) {
+  section.carousel .slider-slick .slide-3 .right-image img {
+    padding-bottom: 250px;
+  }
+}/*# sourceMappingURL=main.css.map */
